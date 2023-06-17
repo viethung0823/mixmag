@@ -1,7 +1,12 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import {useState} from "react";
 import "./all.css";
-import $ from "jquery";
 
 function App() {
+	const [isActiveMenu, setIsActiveMenu] = useState(false);
+	function toggleMenu() {
+		setIsActiveMenu(!isActiveMenu);
+	}
 	return (
 		<>
 			{/* desktop nav */}
@@ -15,25 +20,22 @@ function App() {
 						<nav class="nav">
 							<ul>
 								<li class="nav__parent">
-									<a href="/news">News</a>
-								</li>
-								<li class="nav__parent">
-									<a href="/video">Video</a>
+									<a href="/">Home</a>
 								</li>
 								<li class="nav__parent">
 									<a href="/music">Music</a>
 								</li>
 								<li class="nav__parent">
-									<a href="/features">Features</a>
+									<a href="/lifestyles">Lifestyles</a>
 								</li>
 								<li class="nav__parent">
-									<a href="/tech">Tech</a>
+									<a href="/events">Events</a>
 								</li>
 								<li class="nav__parent">
-									<a href="https://shops.ticketmasterpartners.com/mixmag/">Tickets</a>
+									<a href="/contacts">Contacts</a>
 								</li>
 
-								<li class="nav__parent dropdown__selector">
+								{/* <li class="nav__parent dropdown__selector">
 									<a href="#">
 										More <i class="ico ico__arrow ico__arrow--black"></i>
 									</a>
@@ -54,7 +56,7 @@ function App() {
 											<a href="/page/terms-conditions/">Terms and Conditions</a>
 										</li>
 									</ul>
-								</li>
+								</li> */}
 							</ul>
 						</nav>
 					</div>
@@ -68,7 +70,7 @@ function App() {
 					<div class="container">
 						<div class="js-ticker">
 							<ul class="ticker">
-								<li class="ticker__slide">
+								{/* <li class="ticker__slide">
 									<a href="/read/sally-c-announces-third-release-of-big-saldos-chunkers-news">Sally C announces third instalment of 'Big Saldo's Chunkers'</a>
 								</li>
 								<li class="ticker__slide">
@@ -79,11 +81,11 @@ function App() {
 								</li>
 								<li class="ticker__slide">
 									<a href="/feature/15-photos-from-parklife-the-uks-most-energetic-festival">​15 high-energy photos from Parklife 2023</a>
-								</li>
+								</li> */}
 							</ul>
 						</div>
 						<a href="/search/" class="top-bar__search">
-							<i class="ico ico__search"></i>
+							<i class="fa-solid fa-magnifying-glass fa-lg"></i>
 						</a>
 						<ul class="international">
 							<li class="dropdown__selector">
@@ -149,7 +151,33 @@ function App() {
 								</ul>
 							</li>
 						</ul>
-						<ul class="social social-2023"></ul>{" "}
+						<ul class="social social-2023">
+							<li>
+								<a href="https://www.facebook.com/MixmagJapan">
+									<i class="fa-brands fa-facebook fa-lg"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/mixmagjapan">
+									<i class="fa-brands fa-instagram fa-lg"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/MixmagJapan">
+									<i class="fa-brands fa-twitter fa-lg"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://jp.linkedin.com/company/mixmagjapan">
+									<i class="fa-brands fa-linkedin fa-lg"></i>
+								</a>
+							</li>
+							<li>
+								<a>
+									<i class="fa-brands fa-spotify fa-lg"></i>
+								</a>
+							</li>
+						</ul>{" "}
 					</div>
 				</div>
 			</div>
@@ -160,10 +188,10 @@ function App() {
 						<img src="https://mixmag.net/assets/uploads/images/logo_white.svg" alt="Mixmag"></img>
 					</a>
 					<a href="/search" class="site-header-mo__left">
-						<img src="/assets/img/mobile-icons/search.png" height="24" alt="Search"></img>
+						<img src="https://mixmag.net/assets/img/mobile-icons/search.png" height="24" alt="Search"></img>
 					</a>
-					<a href="#" class="site-header-mo__right js-burger">
-						<img src="/assets/img/mobile-icons/burger.png" height="24" alt="Menu"></img>
+					<a href="#" class="site-header-mo__right js-burger" onClick={toggleMenu}>
+						<img src="https://mixmag.net/assets/img/mobile-icons/burger.png" height="24" alt="Menu"></img>
 					</a>
 				</header>
 
@@ -174,35 +202,29 @@ function App() {
 
 					<a href="/news/">Latest News</a>
 
-					<a href="#" class="site-header-mo__right js-burger">
+					<a class="site-header-mo__right js-burger" onClick={toggleMenu}>
 						Menu
 					</a>
 				</div>
 
-				<nav class="site-header-mo__nav">
+				<nav class={`site-header-mo__nav ${isActiveMenu ? "active" : ""}`}>
 					<ul>
 						<li>
 							<a href="/">Home</a>
 						</li>
 						<li>
-							<a href="/news">News</a>
-						</li>
-						<li>
-							<a href="/video">Video</a>
-						</li>
-						<li>
 							<a href="/music">Music</a>
 						</li>
 						<li>
-							<a href="/features">Features</a>
+							<a href="/lifestyles">Lifestyles</a>
 						</li>
 						<li>
-							<a href="/tech">Tech</a>
+							<a href="/events">Events</a>
 						</li>
 						<li>
-							<a href="https://shops.ticketmasterpartners.com/mixmag/">Tickets</a>
+							<a href="/contacts">Contacts</a>
 						</li>
-						<li>
+						{/* <li>
 							<a href="#" class="has-sub">
 								Mixmag
 							</a>
@@ -223,7 +245,7 @@ function App() {
 									<a href="/page/terms-conditions/">Terms and Conditions</a>
 								</li>
 							</ul>
-						</li>
+						</li> */}
 					</ul>
 				</nav>
 			</div>

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic");
 @import url("https://hello.myfonts.net/count/2d8447");
+@import url('https://fonts.cdnfonts.com/css/campton');
 
 html,
 body,
@@ -94,6 +95,10 @@ html {
   line-height: 1;
 }
 
+a {
+  text-decoration: none;
+}
+
 ol,
 ul {
   list-style: none;
@@ -146,8 +151,10 @@ summary {
 }
 
 @font-face {
-  font-family: "Campton-Medium";
-  src: url("../src/assets/webfonts/2D8447_0_0.woff2") format("woff2"),
+  font-family: "Campton";
+  src: url("../src/assets/webfonts/FontsFree-Net-Campton2.ttf") format("ttf"),
+    url("../src/assets/webfonts/2D8447_0_0.woff2") format("woff2"),
+
 }
 
 /* Colours */
@@ -169,187 +176,6 @@ body {
   }
 }
 
-a {
-  color: #ec665f;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #302e2d;
-}
-
-#js-next {
-  visibility: hidden;
-}
-
-.pattern {
-  margin-bottom: 100px;
-  padding-bottom: 100px;
-  border-bottom: #ccc 4px double;
-}
-
-.pattern__debug {
-  background: #ec665f;
-  color: #fff;
-}
-
-.pattern__title {
-  margin-bottom: 40px;
-  font-weight: bold;
-  font-size: 32px;
-}
-
-.pattern__sub-title {
-  margin-top: 40px;
-  color: #979797;
-  margin-bottom: 40px;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.pattern__intro {
-  background: #fafafa;
-  padding: 20px;
-  border: #ccc 1px solid;
-  margin-bottom: 20px;
-  border-left: #ccc 4px solid;
-}
-
-.pattern__intro p {
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.pattern__intro p strong {
-  font-weight: bold;
-  color: #ec665f;
-}
-
-.pattern__intro p code {
-  font-family: "Courier New";
-  font-weight: bold;
-}
-
-.pattern__intro p:last-of-type {
-  margin-bottom: 0;
-}
-
-.pattern__list {
-  list-style: square;
-  font-size: 14px;
-}
-
-.pattern__list li {
-  margin-bottom: 10px;
-  margin-left: 20px;
-}
-
-.pattern__checker {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #ec665f;
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  padding: 20px;
-  display: none;
-  z-index: 9999;
-}
-
-.pattern__top {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #fff;
-  border: #000 1px solid;
-  padding: 20px;
-  text-decoration: none;
-  color: #000;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px;
-}
-
-.pattern__top:hover {
-  background: #ec665f;
-  color: #fff;
-}
-
-@media (max-width: 1008px) {
-  .pattern__checker--mobile {
-    display: block;
-  }
-}
-
-@media (min-width: 1008px) {
-  .pattern__checker--desktop {
-    background: #0092d3;
-    display: block;
-  }
-}
-
-@media (min-width: 1008px) {
-  .d-grid {
-    margin: 0 -18px;
-    width: calc(100% + 36px);
-    /* 2x grid within a 3x grid */
-  }
-
-  .d-grid .grid__item {
-    margin: 0 18px;
-    float: left;
-  }
-
-  .d-grid--focal .grid__item--main {
-    width: 660px;
-  }
-
-  .d-grid--focal .grid__item--aside {
-    width: 312px;
-  }
-
-  .d-grid--1x .grid__item {
-    width: 1008px;
-  }
-
-  .d-grid--2x .d-grid__item {
-    width: 486px;
-  }
-
-  .d-grid--3x-2x .grid__item {
-    width: 312px;
-  }
-
-  .d-grid--3x-2x .grid__item:nth-child(2n + 1) {
-    clear: left;
-  }
-
-  .d-grid--3x .grid__item {
-    width: 312px;
-  }
-
-  .d-grid--3x .grid__item:nth-child(3n + 1) {
-    clear: left;
-  }
-
-  .d-grid--3x .grid__item.no-clear {
-    clear: none !important;
-  }
-
-  .d-grid--3x .grid__item--double {
-    width: 660px;
-  }
-
-  .d-grid--5x {
-    margin: 0 -11px;
-  }
-
-  .d-grid--5x .grid__item {
-    width: 184px;
-    margin: 0 11px;
-  }
-}
 
 @media (max-width: 1008px) {
   .m-grid {
@@ -447,7 +273,7 @@ a:hover {
   font-size: 14px;
   letter-spacing: 1px;
   border-radius: 40px;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-weight: lighter;
   text-align: center;
@@ -721,7 +547,7 @@ a:hover {
 }
 
 .context-marker {
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   text-transform: uppercase;
   font-size: 10px;
@@ -802,7 +628,7 @@ a.context-marker:hover {
   transition: all 0.3s 0;
   border-bottom: #ccc 2px solid;
   display: block;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -915,7 +741,7 @@ a.context-marker:hover {
 
 .story-block__title {
   color: #302e2d;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 22px;
   font-weight: 500;
@@ -1035,7 +861,7 @@ a.context-marker:hover {
   text-transform: uppercase;
   margin-bottom: 10px;
   display: block;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
 }
 
@@ -1060,7 +886,7 @@ a.context-marker:hover {
   display: block;
   background: #606060;
   color: #fff;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 15px;
   text-transform: uppercase;
@@ -1124,7 +950,7 @@ a.context-marker:hover {
 }
 
 .hero__title {
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 58px;
   font-weight: 500;
@@ -1133,7 +959,7 @@ a.context-marker:hover {
 }
 
 .hero__line {
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 22px;
   font-weight: 500;
@@ -1197,6 +1023,11 @@ a.context-marker:hover {
   padding: 0 20px;
   border-left: #4a4a4a 1px solid;
   padding-right: 0;
+  color: white
+}
+
+.top-bar__search :hover {
+  color: #ec665f;
 }
 
 .top-bar__search i {
@@ -1233,6 +1064,23 @@ a.context-marker:hover {
 .social {
   float: right;
   margin-right: 37px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 18px;
+}
+
+.social a {
+  color: #fff;
+}
+
+.social i {
+  color: inherit;
+}
+
+.social li:hover a {
+  color: #ec665f;
 }
 
 .social__network {
@@ -1322,17 +1170,18 @@ a.context-marker:hover {
     text-align: center;
     background: #e4e5e6;
     padding: 15px;
-    font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+    font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
       Sans-Serif;
     text-transform: uppercase;
   }
 
   .site-header-mo__shortcuts a {
     color: #302e2d;
+    text-decoration: unset;
+    font-weight: 600;
   }
 
   .site-header-mo__nav {
-    display: none;
     background: #302e2d;
     position: absolute;
     top: 56px;
@@ -1340,17 +1189,25 @@ a.context-marker:hover {
     width: 100%;
     z-index: 99999;
     overflow: scroll;
+    height: 0;
+    transition: height 0.5s ease;
+  }
+
+  .site-header-mo__nav.active {
+    display: block;
     height: calc(100vh - 56px);
   }
+
 
   .site-header-mo__nav a {
     display: block;
     padding: 15px;
     color: #fff;
     text-transform: uppercase;
-    font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+    font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
       Sans-Serif;
     border-top: #8b8b8b 1px solid;
+    font-weight: 500;
   }
 
   .site-header-mo__nav a:hover {
@@ -1397,7 +1254,7 @@ a.context-marker:hover {
   padding: 30px 7px;
   display: block;
   text-transform: uppercase;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   text-decoration: none;
   font-weight: 500;
@@ -1427,7 +1284,7 @@ a.context-marker:hover {
 
 .nav__vertical-note {
   text-transform: uppercase;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   text-decoration: none;
   font-weight: 500;
@@ -1462,7 +1319,7 @@ a.context-marker:hover {
   transition: all 0.3s 0;
   display: block;
   text-decoration: none;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 12px;
   font-weight: 500;
@@ -1646,7 +1503,7 @@ a.context-marker:hover {
   padding: 17px 17px 17px 40px;
   text-decoration: none;
   font-size: 14px;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-weight: 500;
 }
@@ -1755,7 +1612,7 @@ a.context-marker:hover {
 
 .article-header__title {
   margin: 30px 0;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -1794,12 +1651,12 @@ a.context-marker:hover {
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: 500;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
 }
 
 .article-header__meta {
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -2115,7 +1972,7 @@ img.rich-text__block--center {
 }
 
 .sub-title {
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   color: #302e2d;
   font-size: 55px;
@@ -2231,7 +2088,7 @@ img.rich-text__block--center {
 
 .tweetable {
   text-align: left;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-weight: 500;
 }
@@ -2309,7 +2166,7 @@ img.rich-text__block--center {
   text-decoration: none;
   width: 330px;
   float: left;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-weight: 500;
   color: #302e2d;
@@ -2366,7 +2223,7 @@ img.rich-text__block--center {
 .section-head {
   color: #302e2d;
   margin-bottom: 20px;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 22px;
   font-weight: 500;
@@ -2411,7 +2268,7 @@ img.rich-text__block--center {
   border-radius: 2px;
   outline: none;
   font-weight: 500;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   color: #302e2d;
   font-size: 14px;
@@ -2490,7 +2347,7 @@ img.rich-text__block--center {
   background-position: 170px 19px;
   border-radius: 2px;
   padding: 15px;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   color: #302e2d;
 }
@@ -2558,7 +2415,7 @@ img.rich-text__block--center {
 }
 
 .section-filter__select--mo ul a {
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 18px;
   color: #898685;
@@ -2594,7 +2451,7 @@ img.rich-text__block--center {
 .youtube-subscribe__prompt p {
   color: #fff;
   font-weight: 500;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 21px;
   line-height: 25px;
@@ -2620,7 +2477,7 @@ img.rich-text__block--center {
 }
 
 .popular {
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 14px;
 }
@@ -2718,7 +2575,7 @@ img.rich-text__block--center {
   font-size: 13px;
   text-align: center;
   line-height: 20px;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   color: #fff;
 }
@@ -2749,7 +2606,7 @@ img.rich-text__block--center {
     display: block;
     background: #ec665f;
     text-align: center;
-    font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+    font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
       Sans-Serif;
     padding: 30px;
     z-index: 999999;
@@ -2801,7 +2658,7 @@ img.rich-text__block--center {
   background: #f0f0f0;
   border-radius: 2px;
   outline: none;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 14px;
 }
@@ -2872,7 +2729,7 @@ img.rich-text__block--center {
   background: #fff;
   padding: 10px;
   text-align: center;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   display: block;
   color: #000;
@@ -2930,7 +2787,7 @@ img.rich-text__block--center {
 }
 
 .age-gate__title {
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 40px;
   text-transform: uppercase;
@@ -2993,7 +2850,7 @@ img.rich-text__block--center {
   background: #1b1b1b;
   border: #1b1b1b 1px solid;
   border-radius: 88px;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   font-size: 20px;
   color: #595858;
@@ -3120,7 +2977,7 @@ img.rich-text__block--center {
   border: #000 10px solid;
   padding: 45px;
   margin-bottom: 40px;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
   color: #302e2d;
   font-size: 55px;
@@ -3242,7 +3099,7 @@ img.rich-text__block--center {
 .newsletter-box__inner {
   padding: 30px;
   flex: 1;
-  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial,
+  font-family: "Campton", "Roboto", "Helvetica Neue", Helvetica, Arial,
     Sans-Serif;
 }
 
