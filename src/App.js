@@ -1,12 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {useState} from "react";
 import "./all.css";
+import $ from "jquery";
 
 function App() {
 	const [isActiveMenu, setIsActiveMenu] = useState(false);
 	function toggleMenu() {
 		setIsActiveMenu(!isActiveMenu);
 	}
+	$(document).ready(function () {
+		var metaSection = $(".blog-meta-section");
+		$(".blog-basic-grid--container div").append(metaSection);
+	});
+
 	return (
 		<>
 			{/* desktop nav */}
