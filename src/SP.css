@@ -31,3 +31,7 @@
 .blog-basic-grid .blog-meta-delimiter {
   font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 }
+
+.sqs-block-summary-v2 * {
+  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
