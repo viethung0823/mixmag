@@ -6,8 +6,8 @@ window.onload = function () {
 	});
 
 	const metaSection1 = document.querySelectorAll(".summary-metadata-container");
-	metaSections.forEach((metaSection) => {
-		metaSection1?.classList.add("context-marker");
-		document.querySelector(".summary-thumbnail-outer-container")?.appendChild(metaSection1);
+	metaSection1.forEach((metaSection) => {
+		metaSection?.classList.add("context-marker");
+		document.querySelector(".summary-thumbnail-outer-container")?.appendChild(metaSection);
 	});
 };
