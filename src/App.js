@@ -10,19 +10,14 @@ function App() {
 	function toggleMenu() {
 		setIsActiveMenu(!isActiveMenu);
 	}
-	$(document).ready(function () {
-		var metaSection = $(".blog-meta-section");
-		$(".blog-basic-grid--container div").append(metaSection);
-
-		console.log(123);
-	});
+	$(document).ready(function () {});
 
 	return (
 		<>
 			{/* desktop nav */}
 			<div class="do">
 				<header class="site-header">
-					<div class="container d-flex">
+					<div class="containerr d-flex">
 						<a href="/" class="site-header__logo">
 							<img src="https://res.cloudinary.com/indridcold/image/upload/v1657016704/qsw8pnhkvqzha1nfuskk.png" alt="Mixmag"></img>
 						</a>
@@ -77,7 +72,7 @@ function App() {
 					</div>
 				</div>
 				<div class="top-bar">
-					<div class="container">
+					<div class="containerr">
 						<div class="js-ticker">
 							<ul class="ticker">
 								{/* <li class="ticker__slide">

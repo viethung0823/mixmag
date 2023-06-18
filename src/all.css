@@ -203,7 +203,7 @@ body {
   }
 }
 
-.container {
+.containerr {
   width: 1048px;
   margin: 0 auto;
   padding: 0 20px;
@@ -211,12 +211,12 @@ body {
 }
 
 @media (max-width: 1008px) {
-  .container {
+  .containerr {
     width: 100%;
   }
 }
 
-.container--wide {
+.containerr--wide {
   max-width: 1600px;
   min-width: 1048px;
   padding: 0 20px;
@@ -1278,7 +1278,7 @@ a.context-marker:hover {
   text-align: left;
 }
 
-.nav__vertical .container {
+.nav__vertical .containerr {
   background: none;
 }
 
@@ -2258,7 +2258,7 @@ img.rich-text__block--center {
   padding: 60px 0;
 }
 
-.featured .container {
+.featured .containerr {
   background: none;
 }
 
