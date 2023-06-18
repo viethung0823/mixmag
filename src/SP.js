@@ -1,13 +1,13 @@
 window.onload = function () {
 	const metaSections = document.querySelectorAll(".blog-meta-section");
-	metaSections.forEach((metaSection) => {
+	metaSections.forEach((metaSection, index) => {
 		metaSection?.classList.add("context-marker");
-		document.querySelector(".blog-basic-grid--container div")?.appendChild(metaSection);
+		document.querySelectorAll(".blog-basic-grid--container div")[index]?.appendChild(metaSection);
 	});
 
 	const metaSection1 = document.querySelectorAll(".summary-metadata-container");
-	metaSection1.forEach((metaSection) => {
+	metaSection1.forEach((metaSection, index) => {
 		metaSection?.classList.add("context-marker");
-		document.querySelector(".summary-thumbnail-outer-container")?.appendChild(metaSection);
+		document.querySelectorAll(".summary-thumbnail-outer-container")[index]?.appendChild(metaSection);
 	});
 };
