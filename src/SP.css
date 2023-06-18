@@ -18,7 +18,8 @@
   position: relative;
 }
 
-.blog-meta-section {
+.blog-meta-section,
+.summary-metadata-container {
   margin-bottom: unset !important;
   position: absolute;
   left: 0;
