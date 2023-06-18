@@ -11,6 +11,7 @@ function App() {
 	$(document).ready(function () {
 		var metaSection = $(".blog-meta-section");
 		$(".blog-basic-grid--container div").append(metaSection);
+		console.log(123);
 	});
 
 	return (
