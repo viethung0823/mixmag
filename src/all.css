@@ -86,9 +86,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
 }
 
 html {
@@ -166,7 +163,6 @@ summary {
 
 body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-  background: #f7f7f7;
   overflow-x: hidden;
 }
 
