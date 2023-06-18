@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {useState} from "react";
 import "./all.css";
+import "./SP.css";
+import "./SP.js";
 import $ from "jquery";
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
 	$(document).ready(function () {
 		var metaSection = $(".blog-meta-section");
 		$(".blog-basic-grid--container div").append(metaSection);
+
 		console.log(123);
 	});
 

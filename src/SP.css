@@ -1,0 +1,33 @@
+/* squarespace */
+#root {
+  position: relative;
+  z-index: 1000;
+}
+
+#header {
+  display: none;
+}
+
+/* blogs */
+.blog-meta-delimiter,
+.blog-meta-secondary {
+  display: none !important;
+}
+
+.blog-basic-grid--container>div:first-child {
+  position: relative;
+}
+
+.blog-meta-section {
+  margin-bottom: unset !important;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.blog-basic-grid .blog-categories-list a,
+.blog-basic-grid .blog-author,
+.blog-basic-grid .blog-date,
+.blog-basic-grid .blog-meta-delimiter {
+  font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
