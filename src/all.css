@@ -1127,18 +1127,22 @@ a.context-marker:hover {
     display: none;
   }
 
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+
   .site-header__logo {
     -moz-transition: all 0.3s 0;
     -o-transition: all 0.3s 0;
     -webkit-transition: all 0.3s 0;
     transition: all 0.3s 0;
-    float: left;
     position: relative;
-    top: 27px;
   }
 
   .site-header__logo img {
-    width: 160px;
+    width: 11.3125rem;
+    margin-top: 12px;
   }
 
   .site-header__logo:hover {
@@ -3153,4 +3157,8 @@ img.rich-text__block--center {
   margin: 1em -100%;
   /* old browsers fallback */
   margin: 1em calc(50% - 50vw);
+}
+
+.site-header-mo__logo img {
+  width: 8.0625rem;
 }

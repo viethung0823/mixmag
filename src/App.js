@@ -12,7 +12,7 @@ function App() {
 			{/* desktop nav */}
 			<div class="do">
 				<header class="site-header">
-					<div class="container">
+					<div class="container d-flex">
 						<a href="/" class="site-header__logo">
 							<img src="https://res.cloudinary.com/indridcold/image/upload/v1657016704/qsw8pnhkvqzha1nfuskk.png" alt="Mixmag"></img>
 						</a>
@@ -185,7 +185,7 @@ function App() {
 			<div class="mo mo-fixed-header">
 				<header class="site-header-mo">
 					<a href="/" class="site-header-mo__logo">
-						<img src="https://mixmag.net/assets/uploads/images/logo_white.svg" alt="Mixmag"></img>
+						<img src="https://res.cloudinary.com/indridcold/image/upload/v1657016704/qsw8pnhkvqzha1nfuskk.png" alt="Mixmag"></img>
 					</a>
 					<a href="/search" class="site-header-mo__left">
 						<img src="https://mixmag.net/assets/img/mobile-icons/search.png" height="24" alt="Search"></img>
