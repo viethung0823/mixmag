@@ -37,7 +37,10 @@ function App() {
 									<a href="/events">Events</a>
 								</li>
 								<li class="nav__parent">
-									<a href="/contacts">Contacts</a>
+									<a href="/about">About Us</a>
+								</li>
+								<li class="nav__parent">
+									<a href="/contact">Contact</a>
 								</li>
 
 								{/* <li class="nav__parent dropdown__selector">
@@ -178,7 +181,7 @@ function App() {
 								</a>
 							</li>
 							<li>
-								<a>
+								<a href="https://open.spotify.com/user/312233c5fzx2f5lhx57gn5zbpkt4?si=604bc44f9d9d4737">
 									<i class="fa-brands fa-spotify fa-lg"></i>
 								</a>
 							</li>
@@ -221,13 +224,16 @@ function App() {
 							<a href="/music">Music</a>
 						</li>
 						<li>
-							<a href="/lifestyles">Lifestyles</a>
+							<a href="/lifestyles">Lifestyle</a>
 						</li>
 						<li>
 							<a href="/events">Events</a>
 						</li>
 						<li>
-							<a href="/contacts">Contacts</a>
+							<a href="/about">About Us</a>
+						</li>
+						<li>
+							<a href="/contact">Contact</a>
 						</li>
 						{/* <li>
 							<a href="#" class="has-sub">
