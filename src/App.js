@@ -31,7 +31,7 @@ function App() {
 									<a href="/music">Music</a>
 								</li>
 								<li class="nav__parent">
-									<a href="/lifestyles">Lifestyles</a>
+									<a href="/lifestyle">Lifestyle</a>
 								</li>
 								<li class="nav__parent">
 									<a href="/events">Events</a>
@@ -224,7 +224,7 @@ function App() {
 							<a href="/music">Music</a>
 						</li>
 						<li>
-							<a href="/lifestyles">Lifestyle</a>
+							<a href="/lifestyle">Lifestyle</a>
 						</li>
 						<li>
 							<a href="/events">Events</a>
