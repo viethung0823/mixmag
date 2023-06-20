@@ -36,3 +36,7 @@
 .sqs-block-summary-v2 * {
   font-family: "Campton-Medium", "Roboto", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 }
+
+.sqs-block-summary-v2 .summary-title {
+  font-weight: 600 !important;
+}
