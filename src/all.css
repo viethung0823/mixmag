@@ -3164,3 +3164,9 @@ img.rich-text__block--center {
 .site-header-mo__logo img {
   width: 8.0625rem;
 }
+
+.billboard .containerr {
+  background: unset;
+  color: #fff;
+  text-align: left;
+}

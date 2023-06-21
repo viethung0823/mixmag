@@ -71,7 +71,11 @@ function App() {
 				</header>
 				<div class="billboard">
 					<div>
-						<div data-mutual-ad="149393820/Mixmag/Top_Units" class="dfp_billboard" data-dfp-ad="true" id="149393820/Mixmag/Top_Units"></div>
+						<div class="containerr">
+							<div data-mutual-ad="149393820/Mixmag/Top_Units" class="dfp_billboard" data-dfp-ad="true" id="149393820/Mixmag/Top_Units">
+								<span>私たちMixmagは世界２１カ国にオフィスを持ち、毎月5000万人に購読されています</span>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="top-bar">
