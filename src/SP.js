@@ -11,8 +11,8 @@ window.onload = function () {
 		document.querySelectorAll(".summary-thumbnail-outer-container")[index]?.appendChild(metaSection);
 	});
 
-	const newImg = document.querySelector(".summary-thumbnail > img").src.replace(/\?.*/, "");
-	const newImg1 = document.querySelectorAll(".summary-thumbnail > img")[0].src.replace(/\?.*/, "");
+	const newImg = document.querySelector(".summary-thumbnail > img").src
+	const newImg1 = document.querySelectorAll(".summary-thumbnail > img")[0].src
 	console.log('🚀 ~ newImg:', newImg)
 	console.log('🚀 ~ newImg:', newImg1)
 	if (newImg) {
