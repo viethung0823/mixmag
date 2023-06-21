@@ -11,8 +11,11 @@ window.onload = function () {
 		document.querySelectorAll(".summary-thumbnail-outer-container")[index]?.appendChild(metaSection);
 	});
 
-	document.querySelector("img[src='https://images.squarespace-cdn.com/content/v1/6465baf2d00ad7078486fd8f/62f156aa-6937-4dae-96f5-426fec0ad156/image-asset.jpeg?format=2500w']").src = document.querySelector(".summary-thumbnail > img").src.replace(/\?.*/, "");
-	const newHref = document.querySelector(".summary-thumbnail-outer-container a").href;
-	document.querySelector(".sqs-block-image-link.content-fill").href = newHref;
+	const newImg = document.querySelector(".summary-thumbnail > img").src.replace(/\?.*/, "");
+	if (newImg) {
+		document.querySelector("img[src='https://images.squarespace-cdn.com/content/v1/6465baf2d00ad7078486fd8f/62f156aa-6937-4dae-96f5-426fec0ad156/image-asset.jpeg?format=2500w']").src = newImg;
+		const newHref = document.querySelector(".summary-thumbnail-outer-container a").href;
+		document.querySelector(".sqs-block-image-link.content-fill").href = newHref;
+	}
 	document.querySelector(".summary-item").remove();
 };
