@@ -10,13 +10,7 @@ function App() {
 	function toggleMenu() {
 		setIsActiveMenu(!isActiveMenu);
 	}
-	$(document).ready(function () {
-		const newSrc = $(".summary-thumbnail > img").src;
-		$("img[src='https://images.squarespace-cdn.com/content/v1/6465baf2d00ad7078486fd8f/62f156aa-6937-4dae-96f5-426fec0ad156/image-asset.jpeg?format=2500w']").src = newSrc.replace(/\?.*/, "");
-		const newHref = $(".summary-thumbnail-outer-container a").href;
-		$(".sqs-block-image-link.content-fill").href = newHref;
-		$(".summary-item").remove();
-	});
+	$(document).ready(function () {});
 
 	return (
 		<>
