@@ -17,7 +17,7 @@ window.onload = function () {
 		document.querySelector("img[data-image='https://images.squarespace-cdn.com/content/v1/6465baf2d00ad7078486fd8f/62f156aa-6937-4dae-96f5-426fec0ad156/image-asset.jpeg']").src = newImg || newImg1;
 		const newHref = document.querySelector(".summary-thumbnail-outer-container a").href;
 		document.querySelector(".sqs-block-image-link.content-fill").href = newHref;
-		document.querySelector(".sqs-html-content h3 a strong em").innerText = document.querySelector(".summary-title-link").innerText;
+		document.querySelector(".sqs-html-content h3 a strong").innerText = document.querySelector(".summary-title-link").innerText;
 		document.querySelector(".sqs-html-content h3 a").href = newHref;
 	}
 	document.querySelector(".summary-item").remove();
