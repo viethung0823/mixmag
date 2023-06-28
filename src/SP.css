@@ -56,3 +56,7 @@
     font-size: calc((1.1 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
   }
 }
+
+.sqs-block-html .sqs-block-content *:not(h1):not(h2):not(h3), .sqs-block-html .sqs-html-content *:not(h1):not(h2):not(h3) {
+  text-decoration: none;
+}
