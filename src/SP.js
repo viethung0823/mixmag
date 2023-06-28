@@ -19,5 +19,5 @@ window.onload = function () {
 		document.querySelector(".sqs-block-image-link.content-fill").href = newHref;
 	}
 	document.querySelector(".summary-item").remove();
-	document.querySelector(".sqs-block-html .sqs-block-content *:not(h1):not(h2):not(h3), .sqs-block-html .sqs-html-content *:not(h1):not(h2):not(h3)").text = document.querySelector(".summary-title-link").text;
+	document.querySelector(".sqs-html-content h3 strong em").innerText = document.querySelector(".summary-title-link").innerText;
 };
