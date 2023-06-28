@@ -19,6 +19,6 @@ window.onload = function () {
 		document.querySelector(".sqs-block-image-link.content-fill").href = newHref;
 		document.querySelector(".sqs-html-content h3 a strong em").innerText = document.querySelector(".summary-title-link").innerText;
 		document.querySelector(".sqs-html-content h3 a").href = newHref;
-		document.querySelector(".summary-item").remove();
 	}
+	document.querySelector(".summary-item").remove();
 };
