@@ -19,4 +19,5 @@ window.onload = function () {
 		document.querySelector(".sqs-block-image-link.content-fill").href = newHref;
 	}
 	document.querySelector(".summary-item").remove();
+	console.log(document.querySelector(".summary-title-link").text)
 };

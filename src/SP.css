@@ -40,3 +40,19 @@
 .sqs-block-summary-v2 .summary-title {
   font-weight: 600 !important;
 }
+
+@media screen and (min-width: 1089.92px) {
+  [data-collection-type^="blog"] .item-pagination-title {
+    font-size: calc(1rem) !important;
+  }
+
+  .blog-item-wrapper .blog-item-title h1.entry-title {
+    font-size: calc(2 * 1rem);
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  [data-collection-type^="blog"] .item-pagination-title {
+    font-size: calc((1.1 - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
+  }
+}
