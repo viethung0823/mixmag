@@ -212,7 +212,7 @@ function App() {
 						Home
 					</a>
 
-					<a href="/news/">Latest News</a>
+					<a href="/about">About us</a>
 
 					<a class="site-header-mo__right js-burger" onClick={toggleMenu}>
 						Menu
