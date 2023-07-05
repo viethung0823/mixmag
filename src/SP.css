@@ -64,3 +64,8 @@
 .sqs-block-html .sqs-block-content *:not(h1):not(h2):not(h3), .sqs-block-html .sqs-html-content *:not(h1):not(h2):not(h3) {
   text-decoration: none;
 }
+
+.summary-item-list {
+  display: flex !important;
+  flex-wrap: wrap;
+}
