@@ -16,7 +16,7 @@ window.onload = function () {
 	const newImg2 = document.querySelectorAll(".summary-thumbnail > img")[0]?.getAttribute('data-image');
 	const newImg3 = document.querySelectorAll(".summary-thumbnail > img")[0]?.getAttribute('src')?.split('?')?.[0];
 
-	const bigImg = document.querySelector("img[data-image='https://images.squarespace-cdn.com/content/v1/6465baf2d00ad7078486fd8f/62f156aa-6937-4dae-96f5-426fec0ad156/image-asset.jpeg']");
+	const bigImg = document.querySelector("img[data-image='https://images.squarespace-cdn.com/content/v1/6465baf2d00ad7078486fd8f/f3ea4adb-f47d-47cd-a6e9-2e19e9c6900d/loading.gif']");
 	bigImg.src = newImg || newImg1 || newImg2 || newImg3;
 	bigImg.dataset.src= newImg || newImg1 || newImg2 || newImg3;
 	bigImg.srcset = ""
