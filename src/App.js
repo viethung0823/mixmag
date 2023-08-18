@@ -10,7 +10,10 @@ function App() {
 	function toggleMenu() {
 		setIsActiveMenu(!isActiveMenu);
 	}
-	$(document).ready(function () {});
+	$(document).ready(function () {
+		window.dispatchEvent(new Event('resize'));
+		console.log(123)
+	});
 
 	return (
 		<>
